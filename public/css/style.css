@@ -1,0 +1,159 @@
+:root {
+  --amarillo: #EAC926;
+  --azul:#03264C;
+  --celeste: #1259c3;
+  --gris-oscuro: #666;
+  --gris-claro: #ebebeb;
+  --verde: #39b54a;
+  --blanco: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
+body {
+  background-color: var(--amarillo);
+}
+
+/* HEADER */
+.header {
+  padding: 16px;
+  /* border: 1px solid red; */
+}
+
+.header_first{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.header_first img{
+  width: 100%;
+}
+
+.search {
+  width: 100%;
+  padding: 16px 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  color: #ccc;
+}
+
+.header_first a {
+  text-decoration: none;
+  text-align: center;
+  color: #414141;
+}
+
+.menu{
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.menu_items{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 4px;
+}
+
+.menu_item{
+  list-style: none;
+  background-color: var(--blanco);
+  padding: 16px 8px;
+  border-radius: 8px;
+}
+
+.menu_item a{
+  text-decoration: none;
+  color: #414141;
+}
+
+.burguer-menu {
+  background-color: var(--azul);
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.burguer-menu i {
+  color: var(--blanco);
+  font-size: 24px;
+}
+
+/* MAIN */
+.main{
+  padding: 16px;
+}
+
+.main_productos_vistoUltimo, .main_productos_ofertas {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 16px;
+  padding: 16px;
+}
+
+.main_productos_ofertas h3 {
+  font-size: 24px;
+}
+
+.main_productos_vistoUltimo h3 {
+  font-size: 24px;
+}
+
+.card_product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: var(--blanco);
+}
+
+.card_product img {
+  width: 80%;
+}
+
+.precio {
+  font-size: 18px;
+}
+
+.descuento {
+  font-size: 16px;
+}
+
+/* FOOTER */
+.footer{
+  padding: 16px;
+  background-color: var(--blanco);
+}
+
+.footer div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.footer div i {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.footer div p {
+  font-size: 12px;
+}
+
+.copyright {
+  margin-top: 32px;
+  text-align: center;
+}
