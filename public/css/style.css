@@ -32,7 +32,12 @@ body {
 }
 
 .header_first img{
-  width: 100%;
+  width: 30%;
+}
+
+.logo-search {
+  display: flex;
+  gap: 16px;
 }
 
 .search {
@@ -61,7 +66,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  gap: 4px;
+  gap: 8px;
 }
 
 .menu_item{
@@ -90,13 +95,14 @@ body {
 /* MAIN */
 .main{
   padding: 16px;
+  background-color: var(--gris-claro);
 }
 
 .main_productos_vistoUltimo, .main_productos_ofertas {
   display: flex;
   flex-direction: column;
   width: 100%;
-  gap: 16px;
+  gap: 10px;
   padding: 16px;
 }
 
@@ -109,17 +115,38 @@ body {
 }
 
 .card_product {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
   padding: 16px;
   border-radius: 8px;
   background-color: var(--blanco);
 }
 
+.description_card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-top: 1px solid var(--gris-claro);
+  position: relative;
+}
+
+.description_card i {
+  margin-top: 8px;
+  color: var(--verde);
+  border: 1px solid var(--verde);
+  padding: 10px 8px;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -28px;
+}
+
 .card_product img {
   width: 80%;
+}
+
+.price-details {
+  display: flex;
+  gap: 16px;
+  padding-top: 16px;
 }
 
 .precio {
@@ -128,6 +155,7 @@ body {
 
 .descuento {
   font-size: 16px;
+  color: var(--verde);
 }
 
 /* FOOTER */
@@ -156,4 +184,28 @@ body {
 .copyright {
   margin-top: 32px;
   text-align: center;
+}
+
+@media (min-width : 361px) {
+  .description_product {
+    display: none;
+  }
+
+  .menu_items {
+    display: none;
+  }
+}
+
+@media (min-width : 769px) {
+  .menu_items {
+    display: flex;
+  }
+
+  .description_product {
+    display: block;
+  }
+
+  .card_product {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100) ;
+  }
 }
