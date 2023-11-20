@@ -15,14 +15,13 @@
   font-family: Roboto;
 }
 
-body {
+/* HEADER */
+.header {
   background-color: var(--amarillo);
 }
 
-/* HEADER */
-.header {
+.header-content {
   padding: 16px;
-  /* border: 1px solid red; */
 }
 
 .header_first{
@@ -31,21 +30,38 @@ body {
   gap: 16px;
 }
 
-.header_first img{
-  width: 30%;
-}
-
 .logo-search {
   display: flex;
   gap: 16px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-search img {
+  width: 50%;
 }
 
 .search {
-  width: 100%;
-  padding: 16px 8px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+  display: flex;
+}
+
+.search input {
+  padding: 8px 4px;
   color: #ccc;
+  background: var(--blanco);
+  width: 100%;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 8px 0px 0px 8px;
+}
+
+.search i {
+  padding: 8px 4px;
+  color: #ccc;
+  background: var(--blanco);
+  border: 1px solid #ccc;
+  border-left: none;
+  border-radius: 0px 8px 8px 0px;
 }
 
 .header_first a {
@@ -53,6 +69,16 @@ body {
   text-align: center;
   color: #414141;
 }
+
+.banner {
+  background-color: var(--gris-claro);
+}
+
+.banner img {
+  width: 100%;
+}
+
+/*MENU*/
 
 .menu{
   padding: 16px;
@@ -71,9 +97,6 @@ body {
 
 .menu_item{
   list-style: none;
-  background-color: var(--blanco);
-  padding: 16px 8px;
-  border-radius: 8px;
 }
 
 .menu_item a{
@@ -103,7 +126,7 @@ body {
   flex-direction: column;
   width: 100%;
   gap: 10px;
-  padding: 16px;
+  padding: 0px 16px;
 }
 
 .main_productos_ofertas h3 {
@@ -196,9 +219,39 @@ body {
   }
 }
 
-@media (min-width : 769px) {
+@media (min-width : 768px) {
+  .header_first {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header_first a {
+    width: 50%;
+  }
+
+  .logo-search img {
+    height: 40px;
+  }
+
+  .logo-search .search {
+    align-items: center;
+  }
+
   .menu_items {
     display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .menu_items .links,.acces {
+    display: flex;
+    gap: 16px;
+  }
+
+  .burguer-menu {
+    display: none;
   }
 
   .description_product {
