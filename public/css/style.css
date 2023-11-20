@@ -43,6 +43,7 @@
 
 .search {
   display: flex;
+  align-items: center;
 }
 
 .search input {
@@ -56,7 +57,7 @@
 }
 
 .search i {
-  padding: 8px 4px;
+  padding: 7.5px 4px;
   color: #ccc;
   background: var(--blanco);
   border: 1px solid #ccc;
@@ -119,11 +120,21 @@
 .main{
   padding: 16px;
   background-color: var(--gris-claro);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .main_productos_vistoUltimo, .main_productos_ofertas {
   display: flex;
   flex-direction: column;
+  gap: 16px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   gap: 10px;
   padding: 0px 16px;
@@ -141,6 +152,9 @@
   padding: 16px;
   border-radius: 8px;
   background-color: var(--blanco);
+  min-width: 311px;
+  max-width: 311px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .description_card {
@@ -164,6 +178,9 @@
 
 .card_product img {
   width: 80%;
+  height: 100%;
+  display: block;
+  margin: auto;
 }
 
 .price-details {
@@ -254,11 +271,31 @@
     display: none;
   }
 
+  /*MAIN*/
+  .card-container {
+    justify-content: center;
+    gap: 32px;
+  }
+
+  .card-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
   .description_product {
     display: block;
   }
+}
+
+@media (min-width: 1024px) {
 
   .card_product {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100) ;
+    max-width: 200px;
+    min-width: 200px;
+  }
+
+  .card_product img {
+    /* height: 100%; */
+    margin-bottom: 16px;
   }
 }
