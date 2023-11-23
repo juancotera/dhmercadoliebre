@@ -1,5 +1,4 @@
 /* HEADER */
-
 .header {
   background-color: var(--amarillo);
 }
@@ -22,7 +21,7 @@
   align-items: center;
 }
 
-.logo-search img {
+.logo-page {
   width: 50%;
 }
 
@@ -86,10 +85,6 @@
     width: 50%;
     display: flex;
     justify-content: space-between;
-  }
-
-  .logo-search img {
-    width: 30%;
   }
 
   .logo-search .search {

@@ -9,3 +9,7 @@
   text-align: center;
   text-decoration: none;
 }
+
+.button.login-button:hover {
+  background-color: #0022AA;
+}

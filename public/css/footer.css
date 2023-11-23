@@ -10,7 +10,7 @@
   padding-block: 24px;
 }
 
-.footer div {
+.footer-sections {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,13 +18,13 @@
   margin-bottom: 24px;
 }
 
-.footer div i {
+.footer-sections i {
   font-size: 2em;
   margin-bottom: 10px;
   color: var(--celeste);
 }
 
-.footer div p {
+.footer-sections p {
   font-size: 12px;
   width: 40%;
   text-wrap: balance;
@@ -38,4 +38,15 @@
 
 @media (min-width : 768px) {
 
+}
+
+@media (min-width : 1024px) {
+  .footer-container {
+    flex-direction: row;
+  }
+
+  .copyright{
+    text-align: left;
+    margin-left: 32px;
+  }
 }

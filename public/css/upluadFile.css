@@ -1,0 +1,39 @@
+
+input[type=file] {
+  outline: 0;
+  opacity: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+.label-file {
+  width: 100%;
+  border: 2px dashed var(--gris-oscuro);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 1.2em;
+  transition: border 300ms ease;
+  cursor: pointer;
+  text-align: center;
+
+  & i {
+    display: block;
+    font-size: 42px;
+    padding-bottom: 16px;
+  }
+
+  & i, .title {
+    color: var(--gris-oscuro);
+    transition: 200ms color;
+  }
+
+  &:hover {
+    border: 2px dashed var(--celeste);
+
+   & i,
+    .title {
+      color: var(--celeste);
+    }
+  }
+}
