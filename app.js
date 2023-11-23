@@ -3,7 +3,9 @@ const app  = express();
 const path = require('path');
 app.use('/public', express.static(path.join(__dirname, 'public')))
 
-app.listen(3030, console.log('esto fue exitoso'));
+// app.listen(3030, console.log('Servidor corriendo en el puerto 3030.'));
+const port = process.env.PORT || 3001;
+app.listen(port,() => console.log(`Servidor corriendo en el puerto ${port}`));
 
 app.get('/', (req, res) => {
   let htmlPath = path.resolve(__dirname, './views/index.html');
