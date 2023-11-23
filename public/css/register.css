@@ -1,0 +1,60 @@
+.main-container {
+  width: 90%;
+  margin: 32px auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+form input {
+  border: none;
+  border: 1px solid var(--gris-oscuro);
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+fieldset {
+  padding: 16px 0px;
+  border: none;
+  display: flex;
+  gap: 16px;
+  border-bottom: 1px solid var(--gris-oscuro);
+}
+
+fieldset legend {
+  font-weight: bold;
+}
+
+fieldset label {
+  display: flex;
+  gap: 4px;
+}
+
+fieldset.datos {
+  flex-direction: column;
+}
+
+.cien {
+  width: 100%;
+}
+
+fieldset.intereses {
+  flex-direction: column;
+}
+
+
+@media (min-width : 768px) {
+  .main-container{
+    width: 60%;
+  }
+}
+
+@media (min-width : 1024px) {
+  .main-container {
+    width: 40%;
+  }
+}

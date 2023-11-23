@@ -1,0 +1,54 @@
+/*MENU*/
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.menu_items {
+  display: none;
+}
+
+.burguer-menu {
+  margin-top: 16px;
+  background-color: var(--azul);
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.burguer-menu i {
+  color: var(--blanco);
+  font-size: 24px;
+}
+
+@media (min-width : 768px) {
+  .menu {
+    margin-top: 32px;
+  }
+  .menu_items {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .links, .acces {
+    display: flex;
+    gap: 16px;
+  }
+
+  .menu_item {
+    list-style: none;
+  }
+
+  .menu_item a {
+    text-decoration: none;
+    color: #414141;
+  }
+
+  .burguer-menu {
+    display: none;
+  }
+}
