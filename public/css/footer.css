@@ -1,6 +1,5 @@
 /* FOOTER */
 .footer {
-  padding: 16px;
   background-color: var(--blanco);
 }
 
@@ -37,6 +36,9 @@
 }
 
 @media (min-width : 768px) {
+  .footer {
+    margin-block: 16px;
+  }
 
 }
 
