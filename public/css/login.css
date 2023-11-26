@@ -1,0 +1,29 @@
+.login-content {
+  width: 90%;
+  margin: auto;
+}
+
+.body-login {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (min-width : 768px) {
+  .login-content {
+      width: 70%;
+    }
+}
+
+@media (min-width : 1024px) {
+
+  .main-login {
+    background-color: white;
+  }
+
+  .login-content {
+    width: 50%;
+    height: 100%;
+  }
+}

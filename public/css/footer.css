@@ -41,6 +41,10 @@
 }
 
 @media (min-width : 1024px) {
+  .footer {
+    max-height: 311px;
+  }
+
   .footer-container {
     flex-direction: row;
   }

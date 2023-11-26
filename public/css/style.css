@@ -4,6 +4,7 @@
 @import url('./button.css');
 @import url('./register.css');
 @import url('./upluadFile.css');
+@import url('./login.css');
 
 :root {
   --amarillo: #EAC926;
@@ -163,6 +164,9 @@ body {
 }
 
 @media (min-width: 1024px) {
+  .main_productos_vistoUltimo, .main_productos_ofertas {
+    margin-block: 80px;
+  }
 
   .card_product {
     max-width: 200px;
@@ -173,4 +177,6 @@ body {
     /* height: 100%; */
     margin-bottom: 32px;
   }
+
+
 }
