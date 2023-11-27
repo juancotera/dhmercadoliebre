@@ -1,4 +1,4 @@
-@import url('./hader.css');
+@import url('./header.css');
 @import url('./menu.css');
 @import url('./footer.css');
 @import url('./button.css');
@@ -30,6 +30,10 @@
 
 body {
   width: 100vw;
+}
+
+input:focus {
+  outline: none;
 }
 
 @media (min-width: 1024px) {
