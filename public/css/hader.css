@@ -114,3 +114,9 @@
   }
 }
 
+@media (min-width: 1024px) {
+  .header-content {
+    padding: 16px 0px;
+  }
+}
+
